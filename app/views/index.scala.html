@@ -1,4 +1,4 @@
-@(message: String)
+@(message: String, isEditable: Boolean = false)
 
 @import tags._
 
@@ -8,6 +8,8 @@
     <div class="jumbotron-fluid">
         <h1>This page will contain the splash screen and handle the mailing list handling</h1>
     </div>
+
+
 
     @notice("error") { color =>
     Oops, something is <span style="color:@color">wrong</span>
