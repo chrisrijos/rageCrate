@@ -1,0 +1,34 @@
+New log file opened at Sat Feb 27 20:33:07 CST 2016 by 1504@Rijos-PC
+Taking next connection to: 21413
+New client attempting to connect on port: 21414-21413
+  Address = /192.168.56.1:21413
+This client on port 21414 has uuid 0c26e062-e2a3-4974-bf85-da9fba342700 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0c26e062-e2a3-4974-bf85-da9fba342700
+Taking next connection to: 21413
+New client attempting to connect on port: 21421-21413
+  Address = /192.168.56.1:21413
+Handshake exception on socket: 21421
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(SocketInputStream.java:116)
+	at java.net.SocketInputStream.read(SocketInputStream.java:170)
+	at java.net.SocketInputStream.read(SocketInputStream.java:141)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 21413
+New client attempting to connect on port: 21422-21413
+  Address = /192.168.56.1:21413
+This client on port 21422 has uuid d188a8e9-ca77-4210-8cd6-53f8849614a6 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-0c26e062-e2a3-4974-bf85-da9fba342700, play-fork-run-d188a8e9-ca77-4210-8cd6-53f8849614a6
+Taking next connection to: 21413
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 21413
