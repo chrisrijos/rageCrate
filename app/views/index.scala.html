@@ -1,4 +1,4 @@
-@(message: String, isEditable: Boolean = false)
+@(message: String)
 
 @import tags._
 
@@ -9,10 +9,20 @@
         <h1>This page will contain the splash screen and handle the mailing list handling</h1>
     </div>
 
+        <!-- Page Content -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <h1>The Big Picture</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+                </div>
+            </div>
+                <!-- /.row -->
+        </div>
+        <!-- /.container -->
 
-
-    @notice("error") { color =>
-    Oops, something is <span style="color:@color">wrong</span>
-    }
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
+    <script src="@routes.Assets.versioned("javascripts/bootstrap.min.js")"></script>
+    <script src="@routes.Assets.versioned("javascripts/main.js")"></script>
 }
 

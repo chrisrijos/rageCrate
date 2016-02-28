@@ -3,8 +3,9 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
-GET     /ragecrate/subscribe        controllers.Application.subscribe()
+GET     /                          controllers.Application.index()
+GET     /rageCrate                 controllers.Application.index()
+GET     /rageCrate/about           controllers.Application.about()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
