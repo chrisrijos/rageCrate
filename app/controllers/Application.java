@@ -10,8 +10,11 @@ public class Application extends Controller {
     public Result index() {
         return ok(index.render("Subscribe"));
     }
-    public Result subscribe(){
-        return TODO;
-    }
+    //the to do just renders a built in
+    public static Result GO_SUBSCRIBE = redirect(
+            //literally does nothing atm just a place holder
+            //routes.Application.subscribe();
+            String.valueOf(TODO)
+    );
 
 }
