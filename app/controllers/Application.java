@@ -16,5 +16,9 @@ public class Application extends Controller {
             //routes.Application.subscribe();
             String.valueOf(TODO)
     );
+    public Result subscribe(){
+        return TODO;
+    }
+
 
 }
